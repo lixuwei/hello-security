@@ -27,7 +27,8 @@ public class MessageBoardServiceImpl implements MessageBoardService{
 		message.setAuthor("xuwei");
 		message.setTitle("haoya");
 		message.setBody("rencai");
-		messages.put((long)1234, message);
+		message.setId((long)1234);
+		messages.put(message.getId(), message);
 	}
 	
 	@Override
