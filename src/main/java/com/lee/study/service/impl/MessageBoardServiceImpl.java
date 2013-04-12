@@ -44,7 +44,7 @@ public class MessageBoardServiceImpl implements MessageBoardService{
 
 	@Override
 	public synchronized void deleteMessage(Message message) {
-		messages.remove(message);
+		messages.remove(message.getId());
 	}
 
 	@Override
